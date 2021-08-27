@@ -10,17 +10,17 @@ Meanwhile, in order to verify the effectiveness of our strategy, we also adopt a
 Note: When DYGIE identifies multiple task entities or method entities, we choose the one with the largest phrase length to provide more information. For the case where the question word or method word cannot be identified, we use null values for its representation
 
 Data uesd:
-    1. The base training datasets in _filtered_ and _unfiltered_ are provided by https://github.com/AhmedAbuRaed/SPSeq2Seq
+1. The base training datasets in _filtered_ and _unfiltered_ are provided by https://github.com/AhmedAbuRaed/SPSeq2Seq
     
-    2. The dataset in _filtered_mq_dygie_ and _unfiltered_mq_dygie_ are based on the base training data with the problem method information, which obtained 	through the open-source tool DyGIE.
-    
-    3. The dataset in _filtered_mq_title_ and _unfiltered_mq_title_ are based on the base training data with the problem method information, which obtained 	through the title generation strategy.
+2. The dataset in _filtered_mq_dygie_ and _unfiltered_mq_dygie_ are based on the base training data with the problem method information, which obtained through the open-source tool DyGIE.
+
+3. The dataset in _filtered_mq_title_ and _unfiltered_mq_title_ are based on the base training data with the problem method information, which obtained through the title generation strategy.
 	
 
 Model and Codes:
 
-    1. For the title generation, we use point network: https://github.com/abisee/pointer-generator, because we hope the problem/method words in the original     text to be copied via pointing during sequence generation.
+1. For the title generation, we use point network: https://github.com/abisee/pointer-generator, because we hope the problem/method words in the original     text to be copied via pointing during sequence generation.
 
-    2. PreSum model code can be found:https://github.com/nlpyang/PreSumm
+2. PreSum model code can be found:https://github.com/nlpyang/PreSumm
 
-    3. Transformer and BART model can be found in : https://huggingface.co/
+3. Transformer and BART model can be found in : https://huggingface.co/
