@@ -10,6 +10,11 @@ Meanwhile, in order to verify the effectiveness of our strategy, we also adopt a
 Note: When DYGIE identifies multiple task entities or method entities, we choose the one with the largest phrase length to provide more information. For the case where the question word or method word cannot be identified, we use null values for its representation
 
 Data uesd:
+    1. The base training datasets in _filtered_ and _unfiltered_ are provided by https://github.com/AhmedAbuRaed/SPSeq2Seq
+    
+    2. The dataset in _filtered_mq_dygie_ and _unfiltered_mq_dygie_ are based on the base training data with the problem method information, which obtained 	through the open-source tool DyGIE.
+    
+    3. The dataset in _filtered_mq_title_ and _unfiltered_mq_title_ are based on the base training data with the problem method information, which obtained 	through the title generation strategy.
 	
 
 Model and Codes:
