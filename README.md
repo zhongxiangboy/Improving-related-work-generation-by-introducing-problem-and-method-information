@@ -15,6 +15,8 @@ Data uesd:
 2. The dataset in _filtered_mq_dygie_ and _unfiltered_mq_dygie_ are based on the base training data with the problem method information, which obtained through the open-source tool DyGIE.
 
 3. The dataset in _filtered_mq_title_ and _unfiltered_mq_title_ are based on the base training data with the problem method information, which obtained through the title generation strategy.
+
+4. We use _rws_test data_ as the godl test dataset (provid by Hoang & Kan (2010)，pioneered the task of automatic related work generation, https://aclanthology.org/C10-2049.pdf). _rws_test_ contains 20 article sets. Each set contains the text of the related work section, and the abstracts of references mentioned in the related work section.
 	
 
 Model and Codes:
